@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+    body{(to bottom right, #e4e4e8,rgb(119, 225, 158));
+    }
+        
+.top{
+    margin-top: 0px;
+    padding-top:0px;
+}
+.inner-bod{
+    padding-top:150px;
+    padding-bottom:100px;
+}
+header{
+      overflow:hidden;
+      position:fixed;
+      width:100%;
+     background-color:#E3E6F3;
+      box-shadow:0px 5px 15px rgba(0,0,0,0.06);
+}
+
+
+.container{
+   
+    width: 750px;
+    height: 500px;
+    
+    background:linear-gradient( #e4e4e8,hwb(241 62% 20%));
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    justify-content:space-around;
+    box-shadow:0px 5px 15px hsla(235, 51%, 59%, 0.06);
+}
+
+.container h1{
+    text-align: center;
+}
+
+.first-row{
+     display: flex;
+}
+
+.owner{
+    width: 100%;
+    margin-right: 40px;
+}
+
+.input-field{
+    border: 1px solid #999;
+}
+
+.input-field input{
+    width: 100%;
+    border:none;
+    outline: none;
+    padding: 10px;
+}
+
+.selection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.selection select{
+    padding: 10px 20px;
+}
+
+.confirm{
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+
+.confirm:hover{
+    background-color: dodgerblue;
+    color:black;
+    font-size: 18px;
+}
+
+.cards img{
+    width: 100px;
+}
+</style>
+</head>
+<body>
+    <main>
+    <div class="top">
+    
+    <header class="p-2">
+        <nav class="navbar navbar-expand-sm  ">
+          <div class="container-fluid">
+            <a class="d-flex align-items-center  mb-2 mb-lg-0 text-decoration-none">
+              <h1 class="text-dark fw-bold fs-1"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+      <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z"/>
+    </svg>SparkEdu</h1>
+            </a>
+          </div>
+          </nav>
+        </header>
+    </div>
+      <div class="bod">
+        <div class="inner-bod">
+    <div class="container">
+        <h1>Confirm Your Payment</h1>
+        <div class="first-row">
+            <div class="owner">
+                <h3>Owner</h3>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="cvv">
+                <h3>CVV</h3>
+                <div class="input-field">
+                    <input type="password">
+                </div>
+            </div>
+        </div>
+        <div class="second-row">
+            <div class="card-number">
+                <h3>Card Number</h3>
+                <div class="input-field">
+                    <input type="text">
+                </div>
+            </div>
+        </div>
+        <div class="third-row">
+            <h3>Card Number</h3>
+            <div class="selection">
+                <div class="date">
+                    <select name="months" id="months">
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                      </select>
+                      <select name="years" id="years">
+                        <option value="2026">2026</option>
+                        <option value="2025">2025</option>
+                        <option value="2024">2024</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                      </select>
+                </div>
+                <div class="cards">
+                    <img src="https://d28wu8o6itv89t.cloudfront.net/images/mastercardlogopng-1579603310730.png" height="65px" alt="">
+                    <img src="data:image/png;base64,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" alt="">
+                    <img src="https://icons.iconarchive.com/icons/designbolts/credit-card-payment/256/Paypal-icon.png" alt="">
+                </div>
+            </div>    
+        </div>
+        <div class="btn-group">
+        <a  href=""><button class="confirm btn me-2" onclick="return(validation())">Confirm</button></a><br>
+        <a  href="courses.html"><button class="confirm btn ">Cancel</button></a><br>
+        </div>
+    </div>
+        </div>
+      </div>
+    </main>
+    <Script>
+  function validation(){
+    alert("Payment Sucessful");
+  }
+    </Script>
+</body>
+</html>
